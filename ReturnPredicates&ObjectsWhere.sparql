@@ -1,0 +1,2 @@
+SELECT ?p ?o
+WHERE {<http://dbpedia.org/resource/Johnny_Depp> ?p ?o}
