@@ -1,0 +1,2 @@
+SELECT ?o
+WHERE {<http://dbpedia.org/resource/Johnny_Depp> <http://dbpedia.org/ontology/birthPlace> ?o}
