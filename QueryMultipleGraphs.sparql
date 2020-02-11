@@ -1,0 +1,4 @@
+SELECT *
+FROM <http://mlu.marklogic.com/movies>
+FROM <http://mlu.marklogic.com/music>
+WHERE {?s <http://dbpedia.org/ontology/birthDate> ?o} 
