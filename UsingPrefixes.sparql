@@ -1,0 +1,5 @@
+PREFIX rsrc: <http://dbpedia.org/resource/>
+PREFIX onto: <http://dbpedia.org/ontology/>
+
+SELECT ?dob
+WHERE {rsrc:Bob_Seger onto:birthDate ?dob} 
