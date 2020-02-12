@@ -1,0 +1,7 @@
+PREFIX onto: <http://dbpedia.org/ontology/>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?s ?bd
+WHERE {?s onto:birthDate ?bd . FILTER (?bd >= "1950-01-01"^^xs:date)}
+ORDER BY DESC(?bd)
+LIMIT 2
