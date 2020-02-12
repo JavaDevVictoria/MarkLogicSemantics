@@ -1,0 +1,8 @@
+PREFIX mo: <http://mlu.marklogic.com/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?courseLabel ?student
+WHERE {
+        ?course mo:student ?student .
+        ?course rdfs:label ?courseLabel
+      }
