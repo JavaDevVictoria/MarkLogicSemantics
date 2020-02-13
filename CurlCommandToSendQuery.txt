@@ -1,0 +1,1 @@
+curl --anyauth --user admin:admin -X POST --data-binary @"Desktop/mls-semantics/unit06/ex01a.sparql" -i -H "Content-type:application/sparql-query" -H "Accept:application/sparql-results+xml" "http://localhost:8091/v1/graphs/sparql"
