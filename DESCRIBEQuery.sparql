@@ -1,0 +1,5 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX onto: <http://dbpedia.org/ontology/> 
+
+DESCRIBE ?s 
+WHERE {?s rdf:type onto:Animal . ?s rdf:type onto:Bird}
