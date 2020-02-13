@@ -1,0 +1,5 @@
+PREFIX mo: <http://mlu.marklogic.com/ontology/>
+
+SELECT (COUNT(?student) as ?count)
+FROM <http://mlu.marklogic.com/registr>
+WHERE {?course mo:student ?student}
