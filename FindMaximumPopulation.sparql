@@ -1,0 +1,5 @@
+PREFIX mo: <http://mlu.marklogic.com/ontology/>
+
+SELECT (MAX(?pop) as ?max)
+FROM <http://mlu.marklogic.com/populations>
+WHERE {?country mo:population ?pop}
