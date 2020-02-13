@@ -1,0 +1,1 @@
+curl --anyauth --user admin:admin -X POST -d "SELECT ?courseLabel WHERE {?course <http://www.w3.org/2000/01/rdf-schema#label> ?courseLabel}" -i -H "Content-type:application/sparql-query" -H "Accept:application/sparql-results+xml" "http://localhost:8091/v1/graphs/sparql"
