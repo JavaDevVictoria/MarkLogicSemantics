@@ -1,0 +1,7 @@
+PREFIX mo: <http://mlu.marklogic.com/ontology/>
+
+SELECT ?course (COUNT(?student) AS ?count)
+FROM <http://mlu.marklogic.com/registr>
+WHERE {?course mo:student ?student}
+GROUP BY ?course
+HAVING (?count >= 3)
