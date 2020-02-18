@@ -1,0 +1,8 @@
+PREFIX rsrc: <http://mydomain.org/resource/>
+PREFIX onto: <http://dbpedia.org/ontology/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?grandchild
+FROM <http://mlu.marklogic.com/family-tree>
+WHERE {rsrc:Amy onto:child/onto:child/foaf:name ?grandchild}
+
