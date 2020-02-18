@@ -4,4 +4,4 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 SELECT ?name
 FROM <http://mlu.marklogic.com/family-tree>
-WHERE {rsrc:Joe onto:parent/foaf:name ?name} 
+WHERE {rsrc:Joe onto:parent*/foaf:name ?name}
