@@ -1,0 +1,8 @@
+PREFIX p: <http://mlu.marklogic.com/product/>
+PREFIX mlu: <http://mlu.marklogic.com/>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+
+WITH <http://mlu.marklogic.com/products>
+DELETE {p:003 mlu:price ?price}
+INSERT {p:003 mlu:price "45.99"^^xs:double}
+WHERE {p:003 mlu:price ?price}
