@@ -1,0 +1,25 @@
+PREFIX c: <http://mlu.marklogic.com/customer/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX p: <http://mlu.marklogic.com/product/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mlu: <http://mlu.marklogic.com/>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA
+{
+  GRAPH <http://mlu.marklogic.com/customers>
+  {
+    c:4444 foaf:name "Karline"
+  }
+  GRAPH <http://mlu.marklogic.com/products>
+  {
+    p:005 rdf:type mlu:blouse ;
+          mlu:color mlu:red ;
+          mlu:category mlu:womensClothing .
+
+    p:006 rdf:type mlu:pant ;
+          mlu:color mlu:brown ;
+          mlu:price "64.99"^^xs:double ;
+          mlu:category mlu:womensClothing .
+  }
+} 
