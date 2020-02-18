@@ -1,0 +1,11 @@
+PREFIX p: <http://mlu.marklogic.com/product/>
+PREFIX mlu: <http://mlu.marklogic.com/>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+
+DELETE DATA
+{
+  GRAPH <http://mlu.marklogic.com/products>
+  {
+    p:001 mlu:price "29.99"^^xs:double
+  }
+} 
