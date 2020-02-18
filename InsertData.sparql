@@ -1,0 +1,11 @@
+PREFIX p: <http://mlu.marklogic.com/product/>
+PREFIX mlu: <http://mlu.marklogic.com/>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA
+{
+  GRAPH <http://mlu.marklogic.com/products>
+  {
+    p:005 mlu:price "39.99"^^xs:double
+  }
+} 
