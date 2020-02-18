@@ -1,0 +1,5 @@
+PREFIX xdmp: <http://marklogic.com/xdmp#>
+
+SELECT ?s ?dayname ?o
+WHERE {?s <http://dbpedia.org/ontology/birthDate> ?o .
+       BIND(xdmp:dayname-from-date(?o) as ?dayname)}
