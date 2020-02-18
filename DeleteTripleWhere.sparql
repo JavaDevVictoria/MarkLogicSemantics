@@ -1,0 +1,7 @@
+PREFIX p: <http://mlu.marklogic.com/product/>
+PREFIX mlu: <http://mlu.marklogic.com/>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+
+WITH <http://mlu.marklogic.com/products>
+DELETE {p:002 mlu:price ?o}
+WHERE {p:002 mlu:price ?o}
